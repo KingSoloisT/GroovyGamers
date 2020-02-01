@@ -26,6 +26,7 @@
     <sprite>sprites\spr_mountain_range2</sprite>
     <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_chasermask</sprite>
+    <sprite>sprites\spr_Light</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -51,6 +52,9 @@
     </objects>
     <objects name="HUD Objects">
       <object>objects\obj_hud_border</object>
+    </objects>
+    <objects name="Fog Of War">
+      <object>objects\obj_World_Fog</object>
     </objects>
   </objects>
   <rooms name="rooms">
