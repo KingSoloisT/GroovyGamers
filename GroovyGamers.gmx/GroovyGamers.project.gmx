@@ -7,6 +7,22 @@
   <sounds name="sound">
     <sound>sound\sng_main</sound>
     <sound>sound\sng_baddies</sound>
+    <sounds name="Hero 1 Wavs">
+      <sound>sound\fx_h1start</sound>
+      <sound>sound\fx_h1end</sound>
+      <sound>sound\fx_h1battlewin</sound>
+      <sound>sound\fx_h1battleloss</sound>
+      <sound>sound\fx_h1cave</sound>
+      <sound>sound\fx_h1lake1</sound>
+      <sound>sound\fx_h1lake2</sound>
+      <sound>sound\fx_h1house</sound>
+      <sound>sound\fx_h1forest</sound>
+      <sound>sound\fx_h1mountain</sound>
+      <sound>sound\fx_h1range</sound>
+      <sound>sound\fx_h1grunt1</sound>
+      <sound>sound\fx_h1grunt2</sound>
+      <sound>sound\fx_h1grunt3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
@@ -84,8 +100,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_map0</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_map0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

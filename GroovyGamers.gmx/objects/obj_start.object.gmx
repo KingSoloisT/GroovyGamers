@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(rm_map0);
+
+if !audio_is_playing(sng_main)
+{
+    audio_play_sound(sng_main,1,true);
+}
 </string>
           </argument>
         </arguments>
