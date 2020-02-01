@@ -28,7 +28,7 @@
             <string>moveing = false;
 image_xscale = 0.125;
 image_yscale = 0.125;
-
+spd = 2;
 </string>
           </argument>
         </arguments>
@@ -105,7 +105,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playerma
     {
        moveing = true;
        instance_create(mouse_x,mouse_y,obj_playermarker);
-       move_towards_point(obj_playermarker.x,obj_playermarker.y,20); //default speed = 2
+       move_towards_point(obj_playermarker.x,obj_playermarker.y,spd); //default speed = 2
     }
     
     if mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(obj_playermarker)

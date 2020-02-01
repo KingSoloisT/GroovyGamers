@@ -23,7 +23,9 @@ instance_create(1920, 1080, obj_mountain2);
 
 instance_create(0,0,obj_hud_border);
 
-instance_create(0,0,obj_TerrainCreator);</code>
+instance_create(0,0,obj_TerrainCreator);
+
+audio_play_sound(fx_h1start,1,false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
