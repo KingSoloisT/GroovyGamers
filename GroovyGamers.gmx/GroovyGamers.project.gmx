@@ -53,17 +53,25 @@
       <sprite>sprites\spr_town0</sprite>
       <sprite>sprites\spr_town1</sprite>
     </sprites>
+    <sprite>sprites\spr_battletype</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
     <background>background\bg_map0</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
+    <objects name="Battle Objects">
+      <object>objects\obj_battletype</object>
+    </objects>
     <objects name="Menu Objects">
       <object>objects\obj_start</object>
       <object>objects\obj_quit</object>
       <object>objects\obj_displaymanager</object>
+      <object>objects\obj_subtitles</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
@@ -105,6 +113,7 @@
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_map0</room>
+    <room>rooms\rm_battle</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
