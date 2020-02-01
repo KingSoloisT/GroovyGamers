@@ -20,7 +20,9 @@ instance_create(960, 540, obj_mountain0);
 instance_create(1440, 810, obj_mountain1);
 instance_create(1920, 1080, obj_mountain2);
 
-instance_create(0,0,obj_hud_border);</code>
+instance_create(0,0,obj_hud_border);
+
+instance_create(0,0,obj_TerrainCreator);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -69,7 +69,6 @@
       <object>objects\obj_player0</object>
       <object>objects\obj_playermarker</object>
       <object>objects\obj_trail</object>
-      <object>objects\obj_controls</object>
       <object>objects\obj_chaser</object>
       <object>objects\obj_enemy</object>
       <objects name="Terrain">
@@ -90,6 +89,10 @@
         <object>objects\obj_house0</object>
         <object>objects\obj_town0</object>
         <object>objects\obj_town1</object>
+      </objects>
+      <objects name="Misc">
+        <object>objects\obj_controls</object>
+        <object>objects\obj_TerrainCreator</object>
       </objects>
     </objects>
     <objects name="HUD Objects">
