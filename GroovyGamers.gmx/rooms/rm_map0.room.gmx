@@ -13,9 +13,9 @@
   <code>instance_create(100, 100, obj_player0);
 
 instance_create(0, 0, obj_controls);
-instance_create(960, 540, obj_mountian0);
-instance_create(1440, 810, obj_mountian1);
-instance_create(1920, 1080, obj_mountian2);
+instance_create(960, 540, obj_mountain0);
+instance_create(1440, 810, obj_mountain1);
+instance_create(1920, 1080, obj_mountain2);
 instance_create(0,0,obj_hud_border);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
