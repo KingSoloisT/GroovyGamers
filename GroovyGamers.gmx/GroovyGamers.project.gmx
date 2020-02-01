@@ -12,10 +12,16 @@
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_hud_border</sprite>
-    <sprite>sprites\spr_mountian0</sprite>
-    <sprite>sprites\spr_mountian1</sprite>
-    <sprite>sprites\spr_mountian2</sprite>
+    <sprite>sprites\spr_mountain0</sprite>
+    <sprite>sprites\spr_mountain1</sprite>
+    <sprite>sprites\spr_mountain2</sprite>
     <sprite>sprites\spr_lake0</sprite>
+    <sprite>sprites\spr_lake1</sprite>
+    <sprite>sprites\spr_lake2</sprite>
+    <sprite>sprites\spr_mountain_range0</sprite>
+    <sprite>sprites\spr_mountain_range1</sprite>
+    <sprite>sprites\spr_mountain_range2</sprite>
+    <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_chasermask</sprite>
   </sprites>
   <backgrounds name="background">
@@ -33,9 +39,10 @@
       <object>objects\obj_player0</object>
       <object>objects\obj_playermarker</object>
       <object>objects\obj_trail</object>
-      <object>objects\obj_mountian0</object>
-      <object>objects\obj_mountian1</object>
-      <object>objects\obj_mountian2</object>
+      <object>objects\obj_mountain0</object>
+      <object>objects\obj_mountain1</object>
+      <object>objects\obj_mountain2</object>
+      <object>objects\obj_controls</object>
       <object>objects\obj_chaser</object>
       <object>objects\obj_enemy</object>
     </objects>
