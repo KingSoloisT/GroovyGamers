@@ -16,19 +16,27 @@
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_hud_border</sprite>
-    <sprite>sprites\spr_mountain0</sprite>
-    <sprite>sprites\spr_mountain1</sprite>
-    <sprite>sprites\spr_mountain2</sprite>
-    <sprite>sprites\spr_lake0</sprite>
-    <sprite>sprites\spr_lake1</sprite>
-    <sprite>sprites\spr_lake2</sprite>
-    <sprite>sprites\spr_mountain_range0</sprite>
-    <sprite>sprites\spr_mountain_range1</sprite>
-    <sprite>sprites\spr_mountain_range2</sprite>
-    <sprite>sprites\sprite14</sprite>
     <sprite>sprites\spr_chasermask</sprite>
     <sprite>sprites\spr_Light</sprite>
-    <sprite>sprites\sprite17</sprite>
+    <sprites name="Terrain">
+      <sprite>sprites\spr_mountain0</sprite>
+      <sprite>sprites\spr_mountain1</sprite>
+      <sprite>sprites\spr_mountain2</sprite>
+      <sprite>sprites\spr_lake0</sprite>
+      <sprite>sprites\spr_lake1</sprite>
+      <sprite>sprites\spr_lake2</sprite>
+      <sprite>sprites\spr_mountain_range0</sprite>
+      <sprite>sprites\spr_mountain_range1</sprite>
+      <sprite>sprites\spr_mountain_range2</sprite>
+      <sprite>sprites\spr_forest0</sprite>
+      <sprite>sprites\spr_forest1</sprite>
+      <sprite>sprites\spr_cave0</sprite>
+      <sprite>sprites\spr_cave1</sprite>
+      <sprite>sprites\spr_cave2</sprite>
+      <sprite>sprites\spr_house0</sprite>
+      <sprite>sprites\spr_town0</sprite>
+      <sprite>sprites\spr_town1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -45,12 +53,28 @@
       <object>objects\obj_player0</object>
       <object>objects\obj_playermarker</object>
       <object>objects\obj_trail</object>
-      <object>objects\obj_mountain0</object>
-      <object>objects\obj_mountain1</object>
-      <object>objects\obj_mountain2</object>
       <object>objects\obj_controls</object>
       <object>objects\obj_chaser</object>
       <object>objects\obj_enemy</object>
+      <objects name="Terrain">
+        <object>objects\obj_mountain0</object>
+        <object>objects\obj_mountain1</object>
+        <object>objects\obj_mountain2</object>
+        <object>objects\obj_lake0</object>
+        <object>objects\obj_lake1</object>
+        <object>objects\obj_lake2</object>
+        <object>objects\obj_mountain_range0</object>
+        <object>objects\obj_mountain_range1</object>
+        <object>objects\obj_mountain_range2</object>
+        <object>objects\obj_forest0</object>
+        <object>objects\obj_forest1</object>
+        <object>objects\obj_cave0</object>
+        <object>objects\obj_cave1</object>
+        <object>objects\obj_cave2</object>
+        <object>objects\obj_house0</object>
+        <object>objects\obj_town0</object>
+        <object>objects\obj_town1</object>
+      </objects>
     </objects>
     <objects name="HUD Objects">
       <object>objects\obj_hud_border</object>

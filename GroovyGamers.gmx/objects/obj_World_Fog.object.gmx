@@ -31,7 +31,9 @@ sFog = surface_create(room_width / res, room_height / res);
 
 surface_set_target(sFog);
 
-draw_clear(c_black);
+//draw_clear(c_black); //Default: c_black
+
+draw_clear_alpha(c_black, 0.5);
 
 surface_reset_target();
 </string>
@@ -56,7 +58,10 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_surface_ext(sFog, 0, 0, res, res, 0, 0, 1);
+            <string>if (surface_exists(sFog))
+{
+    draw_surface_ext(sFog, 0, 0, res, res, 0, 0, 1);
+}
 </string>
           </argument>
         </arguments>

@@ -104,7 +104,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playerma
     {
        moveing = true;
        instance_create(mouse_x,mouse_y,obj_playermarker);
-       move_towards_point(obj_playermarker.x,obj_playermarker.y,2);
+       move_towards_point(obj_playermarker.x,obj_playermarker.y,20); //default speed = 2
     }
     
     if mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(obj_playermarker)
@@ -177,7 +177,7 @@ surface_set_target(obj_World_Fog.sFog);
 draw_set_blend_mode(bm_src_color);
 
 draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 2, 2, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
-
+                                                        //colour was 0.
 draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
