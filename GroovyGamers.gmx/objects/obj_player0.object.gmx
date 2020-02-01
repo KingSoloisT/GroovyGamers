@@ -174,11 +174,11 @@ draw_sprite_stretched(spr_hud_border,0,0,0,1280,720);
 
 surface_set_target(obj_World_Fog.sFog);
 
-	draw_set_blend_mode(bm_src_color);
+draw_set_blend_mode(bm_src_color);
 
-		draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 0.3, 0.3, 0, 0, 1); // 0.3 - CHANGE THIS FOR THE SCALE OF CIRCLE
-		
-	draw_set_blend_mode(bm_normal);
+draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 2, 2, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
+
+draw_set_blend_mode(bm_normal);
 
 surface_reset_target();
 </string>
