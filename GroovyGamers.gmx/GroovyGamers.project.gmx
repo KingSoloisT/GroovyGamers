@@ -22,6 +22,7 @@
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
+      <object>objects\obj_playermarker</object>
     </objects>
   </objects>
   <rooms name="rooms">
