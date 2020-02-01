@@ -140,8 +140,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_map0</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_battle</room>
   </rooms>
   <help>
