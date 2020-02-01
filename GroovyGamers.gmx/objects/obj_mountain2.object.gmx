@@ -28,6 +28,85 @@
             <string>image_xscale = 0.5;
 image_yscale = 0.5;
 soundplayed = false
+
+if (place_meeting(x, y, obj_mountain0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_mountain1))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_mountain2))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_lake0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_lake1))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_lake2))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_mountain_range0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_mountain_range1))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_mountain_range2))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_forest0))
+{
+    instance_destroy();
+}
+if (place_meeting(x, y, obj_forest1))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_cave0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_cave1))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_house0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_town0))
+{
+    instance_destroy();
+}
+
+if (place_meeting(x, y, obj_town1))
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
