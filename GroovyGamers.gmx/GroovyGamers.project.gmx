@@ -37,6 +37,21 @@
       <sound>sound\fx_h2grunt2</sound>
       <sound>sound\fx_h2grunt3</sound>
     </sounds>
+    <sounds name="Hero 3 Wavs">
+      <sound>sound\fx_h3start</sound>
+      <sound>sound\fx_h3end</sound>
+      <sound>sound\fx_h3battleloss</sound>
+      <sound>sound\fx_h3battlewin</sound>
+      <sound>sound\fx_h3battleloss2</sound>
+      <sound>sound\fx_h3city</sound>
+      <sound>sound\fx_h3lake</sound>
+      <sound>sound\fx_h3mountain</sound>
+      <sound>sound\fx_h3range</sound>
+      <sound>sound\fx_h3badtimes</sound>
+      <sound>sound\fx_h3grunt1</sound>
+      <sound>sound\fx_h3grunt2</sound>
+      <sound>sound\fx_h3grunt3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
