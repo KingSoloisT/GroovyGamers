@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
+    <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_trail</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
@@ -15,6 +16,7 @@
     <sprite>sprites\spr_mountian1</sprite>
     <sprite>sprites\spr_mountian2</sprite>
     <sprite>sprites\spr_lake0</sprite>
+    <sprite>sprites\spr_chasermask</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -25,6 +27,7 @@
     <objects name="Menu Objects">
       <object>objects\obj_start</object>
       <object>objects\obj_quit</object>
+      <object>objects\obj_displaymanager</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
@@ -33,6 +36,8 @@
       <object>objects\obj_mountian0</object>
       <object>objects\obj_mountian1</object>
       <object>objects\obj_mountian2</object>
+      <object>objects\obj_chaser</object>
+      <object>objects\obj_enemy</object>
     </objects>
     <objects name="HUD Objects">
       <object>objects\obj_hud_border</object>
