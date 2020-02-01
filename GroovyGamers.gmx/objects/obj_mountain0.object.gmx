@@ -29,6 +29,7 @@
 image_yscale = 0.5;
 soundplayed = false;
 
+
 </string>
           </argument>
         </arguments>
@@ -62,7 +63,7 @@ if (collision_circle( x, y, sprite_width * 1.5, obj_player0, false, false )) //n
 
     draw_set_blend_mode(bm_src_color);
     
-    draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 2, 2, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
+    draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 1, 1, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
                                                             //colour was 0.
     draw_set_blend_mode(bm_normal);
     
