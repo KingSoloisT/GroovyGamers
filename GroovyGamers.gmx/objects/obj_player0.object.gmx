@@ -25,14 +25,76 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mb_left 
+            <string>moving = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if moveing = true {instance_create(x,y,obj_trail);}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playermarker) 
     {
-        instance_destroy(obj_playermarker);
-        instance_create(mouse_x,mouse_y,obj_playermarker);
-        move_towards_point(obj_playermarker.x,obj_playermarker.y,2);
+            moving = true;
+            instance_create(mouse_x,mouse_y,obj_playermarker);
+            move_towards_point(obj_playermarker.x,obj_playermarker.y,2);
+  
     }
     
+if mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(obj_playermarker) 
+    {
+            instance_destroy(obj_playermarker);
+            move_towards_point(0,0,0);    
+    }
     
+if place_meeting(x,y,obj_playermarker)
+    {
+        moveing = false;
+        instance_destroy(obj_playermarker);
+        move_towards_point(0,0,0);
+    }
+    
+if (alarm[0] == -1) {alarm[0] = 60;};  
+
+
 </string>
           </argument>
         </arguments>

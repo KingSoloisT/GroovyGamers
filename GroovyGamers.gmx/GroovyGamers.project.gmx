@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
+    <sprite>sprites\spr_trail</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_hud_border</sprite>
@@ -28,6 +29,7 @@
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
       <object>objects\obj_playermarker</object>
+      <object>objects\obj_trail</object>
       <object>objects\obj_mountian0</object>
       <object>objects\obj_mountian1</object>
       <object>objects\obj_mountian2</object>
