@@ -52,6 +52,10 @@
       <sound>sound\fx_h3grunt2</sound>
       <sound>sound\fx_h3grunt3</sound>
     </sounds>
+    <sounds name="Narrator">
+      <sound>sound\fx_opening</sound>
+      <sound>sound\fx_ending</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
