@@ -10,7 +10,33 @@
   <persistent>-1</persistent>
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(100, 100, obj_player0);
+  <code>//Below for amount 
+global.iMaxmountain0 = 100;
+global.iMaxmountain1 = 100;
+global.iMaxmountain2 = 100;
+
+global.iMaxmountainrange0 = 100;
+global.iMaxmountainrange1 = 100;
+global.iMaxmountainrange2 = 100;
+
+global.iMaxforest0 = 100;
+global.iMaxforest1 = 100;
+
+global.iMaxlake0 = 100;
+global.iMaxlake1 = 100;
+global.iMaxlake2 = 100;
+
+global.iMaxcave0 = 100;
+global.iMaxcave1 = 100;
+
+global.iMaxtown0 = 100;
+global.iMaxtown1 = 100;
+
+global.iMaxhouse0 = 100;
+
+global.iMaxcave2 = 1;
+
+instance_create(100, 100, obj_player0);
 
 instance_create(0, 0, obj_controls);
 instance_create(0, 0, obj_subtitles);

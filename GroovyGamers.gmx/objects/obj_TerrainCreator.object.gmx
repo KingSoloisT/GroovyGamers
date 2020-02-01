@@ -52,11 +52,14 @@ ihouse0
 
 icave2 - Only one.
 */
+//19200 width
+//10800 height
 
-var i;
-for (i = 0; i &lt; 100; i += 1)
+var imountain0;
+
+for (imountain0 = 0; imountain0 &lt; global.iMaxmountain0; imountain0 += 1)
 {
-    //instance_create(random_range(0, 5000),random_range(0, 5000), obj_zergling);
+    instance_create(random_range(0, room_width),random_range(0, room_height), obj_mountain0);
 }
 
 
