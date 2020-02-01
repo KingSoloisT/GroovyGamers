@@ -50,8 +50,10 @@ instance_create(1920, 1080, obj_mountain2);
 instance_create(0,0,obj_hud_border);
 
 instance_create(0,0,obj_TerrainCreator);
+//start text
+startfx = choose(fx_h1start,fx_h2start,fx_h3start) 
 
-audio_play_sound(fx_h1start,1,false);</code>
+audio_play_sound(startfx,1,false);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

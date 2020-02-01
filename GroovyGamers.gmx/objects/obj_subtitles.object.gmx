@@ -57,7 +57,7 @@ Lost1 = "So I strategically retreated....."
 Lost2 = "I thought I'd let'em off easy..."
 Lost3 = "They weren't worth fighting and I had more exploring to do...."
 Lost4 = "That's not how it happened..."
-Lost5 = "I'M TELLIN THE STORY!"
+
 
 //Game End
 
@@ -147,8 +147,42 @@ LAKE3 = "The lake stretched beyond my eyes reach..."
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if audio_is_playing(fx_h1start){subtitle = Start1; if alarm[0] = -1 {alarm[0] = 60}}
+            <string>//hero1
+if audio_is_playing(fx_h1start){subtitle = Start1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1end){subtitle = End1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1battlewin){subtitle = Won1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1battleloss){subtitle = Lost1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1cave){subtitle = Cave1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1lake1){subtitle = LAKE1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1lake2){subtitle = LAKE2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1house){subtitle = HOUSE1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1forest){subtitle = FOREST1; if alarm[0] = -1 {alarm[0] = 60}}
 if audio_is_playing(fx_h1mountain){subtitle = MOUNTAIN1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h1range){subtitle = MOUNTRANGE1; if alarm[0] = -1 {alarm[0] = 60}}
+
+//hero2
+if audio_is_playing(fx_h2start){subtitle = Start2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2end){subtitle = End2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2battlewin){subtitle = Won2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2battleloss){subtitle = Lost2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2cave){subtitle = Cave2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2town){subtitle = TOWN1; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2forest){subtitle = FOREST2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2mountain){subtitle = MOUNTAIN2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h2range){subtitle = MOUNTRANGE2; if alarm[0] = -1 {alarm[0] = 60}}
+
+//hero3
+if audio_is_playing(fx_h3start){subtitle = Start3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3end){subtitle = End3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3battlewin){subtitle = Won3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3battleloss){subtitle = Lost3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3lake){subtitle = LAKE3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3city){subtitle = TOWN2; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3mountain){subtitle = MOUNTAIN3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3range){subtitle = MOUNTRANGE3; if alarm[0] = -1 {alarm[0] = 60}}
+if audio_is_playing(fx_h3badtimes){subtitle = CaveEnd1; if alarm[0] = -1 {alarm[0] = 60}}
+
+
 </string>
           </argument>
         </arguments>
