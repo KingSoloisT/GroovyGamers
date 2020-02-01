@@ -67,6 +67,7 @@
     <sprite>sprites\spr_hud_border</sprite>
     <sprite>sprites\spr_chasermask</sprite>
     <sprite>sprites\spr_Light</sprite>
+    <sprite>sprites\sprSpeedLines</sprite>
     <sprites name="Battle">
       <sprite>sprites\sprBarb</sprite>
       <sprite>sprites\sprKnight</sprite>
@@ -113,6 +114,7 @@
   <scripts name="scripts">
     <scripts name="Battle">
       <script>scripts\scrDrawUI.gml</script>
+      <script>scripts\scrBattle.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">

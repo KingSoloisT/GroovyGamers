@@ -20,6 +20,7 @@ void main()
 //######################_==_YOYO_SHADER_MARKER_==_######################@~varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform vec2 pos;//width,height,radius
+uniform float size;
 const int Quality = 16;
 
 void main()
@@ -28,7 +29,7 @@ void main()
     float v;
     for( float i=0.0;i<1.0;i+=1.0/float(Quality) )
     {
-        v=0.9+i*0.1;
+        v=0.9+i*size;   //0.1
         Color += texture2D( gm_BaseTexture, v_vTexcoord*v+(pos)*(1.0-v));
     }
     Color /= float(Quality);
