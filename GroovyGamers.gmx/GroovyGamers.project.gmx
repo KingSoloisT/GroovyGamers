@@ -75,6 +75,9 @@
       <sprite>sprites\sprGrass</sprite>
       <sprite>sprites\sprWinLose</sprite>
       <sprite>sprites\sprArrow</sprite>
+      <sprite>sprites\sprLance</sprite>
+      <sprite>sprites\sprWarrior</sprite>
+      <sprite>sprites\sprArcher</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_mountain0</sprite>
@@ -171,8 +174,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_map0</room>
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_battle</room>
+    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

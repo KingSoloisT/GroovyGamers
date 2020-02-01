@@ -43,8 +43,8 @@ timerAllowedMax = 5 * room_speed;   //input time
 timerAllowed = timerAllowedMax;
 //playerHP = 100;
 pWeap = -1;          //player weapon choice
-pSpr = sprKnight;   //player sprite
-eSpr = sprBarb;     //enemy sprite
+pSpr = sprLance;   //player sprite
+eSpr = sprArcher;     //enemy sprite //spr_Barb //sprArcher
 
 
 surf = surface_create(view_wview + 200, view_hview + 200);
