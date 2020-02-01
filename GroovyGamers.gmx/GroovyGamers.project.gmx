@@ -156,10 +156,10 @@
         <object>objects\obj_house0</object>
         <object>objects\obj_town0</object>
         <object>objects\obj_town1</object>
+        <object>objects\obj_TerrainCreator</object>
       </objects>
       <objects name="Misc">
         <object>objects\obj_controls</object>
-        <object>objects\obj_TerrainCreator</object>
       </objects>
     </objects>
     <objects name="HUD Objects">

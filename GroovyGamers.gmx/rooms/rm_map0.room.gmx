@@ -11,28 +11,28 @@
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
   <code>//Below for amount 
-global.iMaxmountain0 = 100;
-global.iMaxmountain1 = 100;
-global.iMaxmountain2 = 100;
+global.iMaxmountain0 = 30;
+global.iMaxmountain1 = 30;
+global.iMaxmountain2 = 30;
 
-global.iMaxmountainrange0 = 100;
-global.iMaxmountainrange1 = 100;
-global.iMaxmountainrange2 = 100;
+global.iMaxmountainrange0 = 30;
+global.iMaxmountainrange1 = 30;
+global.iMaxmountainrange2 = 30;
 
-global.iMaxforest0 = 100;
-global.iMaxforest1 = 100;
+global.iMaxforest0 = 30;
+global.iMaxforest1 = 30;
 
-global.iMaxlake0 = 100;
-global.iMaxlake1 = 100;
-global.iMaxlake2 = 100;
+global.iMaxlake0 = 30;
+global.iMaxlake1 = 30;
+global.iMaxlake2 = 30;
 
-global.iMaxcave0 = 100;
-global.iMaxcave1 = 100;
+global.iMaxcave0 = 30;
+global.iMaxcave1 = 30;
 
-global.iMaxtown0 = 100;
-global.iMaxtown1 = 100;
+global.iMaxtown0 = 30;
+global.iMaxtown1 = 30;
 
-global.iMaxhouse0 = 100;
+global.iMaxhouse0 = 30;
 
 global.iMaxcave2 = 1;
 

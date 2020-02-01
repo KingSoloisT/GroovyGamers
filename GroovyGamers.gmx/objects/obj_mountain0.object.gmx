@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>soundplayed = false;
+            <string>image_xscale = 0.5;
+image_yscale = 0.5;
+soundplayed = false;
 
 </string>
           </argument>
