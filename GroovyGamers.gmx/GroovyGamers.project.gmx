@@ -67,6 +67,15 @@
     <sprite>sprites\spr_hud_border</sprite>
     <sprite>sprites\spr_chasermask</sprite>
     <sprite>sprites\spr_Light</sprite>
+    <sprites name="Battle">
+      <sprite>sprites\sprBarb</sprite>
+      <sprite>sprites\sprKnight</sprite>
+      <sprite>sprites\sprWeap</sprite>
+      <sprite>sprites\sprDraw</sprite>
+      <sprite>sprites\sprGrass</sprite>
+      <sprite>sprites\sprWinLose</sprite>
+      <sprite>sprites\sprArrow</sprite>
+    </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_mountain0</sprite>
       <sprite>sprites\spr_mountain1</sprite>
@@ -91,14 +100,31 @@
   <backgrounds name="background">
     <background>background\bg_menu</background>
     <background>background\bg_map0</background>
+    <backgrounds name="Battle">
+      <background>background\backGrass</background>
+      <background>background\background1</background>
+      <background>background\backGround</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Battle">
+      <script>scripts\scrDrawUI.gml</script>
+    </scripts>
+  </scripts>
+  <shaders name="shaders">
+    <shaders name="Battle">
+      <shader type="GLSLES">shaders\shader0.shader</shader>
+      <shader type="GLSLES">shaders\shader1.shader</shader>
+    </shaders>
+  </shaders>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle Objects">
       <object>objects\obj_battletype</object>
+      <object>objects\objBattle</object>
     </objects>
     <objects name="Menu Objects">
       <object>objects\obj_start</object>
