@@ -9,6 +9,11 @@
     <sprite>sprites\spr_player0</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
+    <sprite>sprites\spr_hud_border</sprite>
+    <sprite>sprites\spr_mountian0</sprite>
+    <sprite>sprites\spr_mountian1</sprite>
+    <sprite>sprites\spr_mountian2</sprite>
+    <sprite>sprites\spr_lake0</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -23,11 +28,17 @@
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
       <object>objects\obj_playermarker</object>
+      <object>objects\obj_mountian0</object>
+      <object>objects\obj_mountian1</object>
+      <object>objects\obj_mountian2</object>
+    </objects>
+    <objects name="HUD Objects">
+      <object>objects\obj_hud_border</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
     <room>rooms\rm_map0</room>
+    <room>rooms\rm_menu</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
