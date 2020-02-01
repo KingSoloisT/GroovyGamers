@@ -114,7 +114,6 @@
   <scripts name="scripts">
     <scripts name="Battle">
       <script>scripts\scrDrawUI.gml</script>
-      <script>scripts\scrBattle.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
