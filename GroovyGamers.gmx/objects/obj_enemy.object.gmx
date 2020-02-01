@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd = choose(2,2.5,3);
+            <string>image_xscale = 0.125;
+image_yscale = 0.125;
+spd = choose(2,2.5,3);
 location = choose(1,2,3,4);
 time = choose(150,300,450);
 

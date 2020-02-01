@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>move = false;
+image_xscale = 0.125;
+image_yscale = 0.125;
 </string>
           </argument>
         </arguments>
