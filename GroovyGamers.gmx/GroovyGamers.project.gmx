@@ -158,6 +158,9 @@
       <object>objects\obj_battletype</object>
       <object>objects\objBattle</object>
       <object>objects\objHUD</object>
+      <object>objects\obj_healthbar</object>
+      <object>objects\obj_battleplayer</object>
+      <object>objects\obj_enemyplayer</object>
     </objects>
     <objects name="Menu Objects">
       <object>objects\obj_start</object>

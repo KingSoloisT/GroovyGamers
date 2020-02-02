@@ -76,7 +76,9 @@ spos=shader_get_uniform(shader1,"pos");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//animation timer
+            <string>
+
+//animation timer
 var zoomTime = 15;
 
 if timerIntro &gt; 0 and timerAnimation &lt; 60 {

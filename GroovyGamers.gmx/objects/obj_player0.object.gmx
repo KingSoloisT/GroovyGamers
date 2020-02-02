@@ -115,7 +115,7 @@ view_hborder[0] = view_wview[0] / 2;
           <argument>
             <kind>1</kind>
             <string>if global.playerHP &lt;= 0 {room_goto(rm_gameover);}
-if global.playerHP &gt;= 5 {global.playerHp = 5;}
+if global.playerHP &gt;= 5 {global.playerHP = 5;}
 view_hspeed[0] = -1;
 view_vspeed[0] = -1;
 
@@ -174,7 +174,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playerma
         //spd = 0;
     }
     
-if (alarm[0] = -1) {alarm[0] = 60};
+if (alarm[0] = -1) {alarm[0] = 45};
 
 if place_meeting(x,y,obj_cave1) || place_meeting(x,y,obj_cave0)
 {
