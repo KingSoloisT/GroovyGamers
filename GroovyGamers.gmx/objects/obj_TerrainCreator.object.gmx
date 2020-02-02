@@ -27,59 +27,22 @@
             <kind>1</kind>
             <string>randomize();
 
-/*
-imountain0
-imountain1
-imountain2
-
-imountainrange0
-imountainrange1
-imountainrange2
-
-iforest0
-iforest1
-
-ilake0
-ilake1
-ilake2
-
-icave0
-icave1
-
-itown0
-itown1
-
-ihouse0
-
-icave2 - Only one.
-*/
-//19200 width
-//10800 height
-
-
 var imountain0;
 var imountain1;
 var imountain2;
-
 var imountainrange0;
 var imountainrange1;
 var imountainrange2;
-
 var iforest0;
 var iforest1;
-
 var ilake0;
 var ilake1;
 var ilake2;
-
 var icave0;
 var icave1;
-
 var itown0;
 var itown1;
-
 var ihouse0;
-
 var icave2;
 
 for (imountain0 = 0; imountain0 &lt; global.iMaxmountain0; imountain0 += 1)
@@ -152,28 +115,6 @@ for (icave2 = 0; icave2 &lt; global.iMaxcave2; icave2 += 1)
     instance_create(random_range(0, room_width),random_range(0, room_height), obj_cave2);
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>

@@ -14,26 +14,19 @@
 global.iMaxmountain0 = 30;
 global.iMaxmountain1 = 30;
 global.iMaxmountain2 = 30;
-
 global.iMaxmountainrange0 = 30;
 global.iMaxmountainrange1 = 30;
 global.iMaxmountainrange2 = 30;
-
 global.iMaxforest0 = 30;
 global.iMaxforest1 = 30;
-
 global.iMaxlake0 = 30;
 global.iMaxlake1 = 30;
 global.iMaxlake2 = 30;
-
 global.iMaxcave0 = 30;
 global.iMaxcave1 = 30;
-
 global.iMaxtown0 = 30;
 global.iMaxtown1 = 30;
-
 global.iMaxhouse0 = 30;
-
 global.iMaxcave2 = 1;
 
 instance_create(100, 100, obj_player0);
@@ -42,10 +35,6 @@ instance_create(0, 0, obj_controls);
 instance_create(0, 0, obj_subtitles);
 
 instance_create(0, 0, obj_World_Fog);
-
-//instance_create(960, 540, obj_mountain0);
-//instance_create(1440, 810, obj_mountain1);
-//instance_create(1920, 1080, obj_mountain2);
 
 instance_create(0,0,obj_hud_border);
 
