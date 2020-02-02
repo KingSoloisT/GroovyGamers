@@ -102,6 +102,9 @@
     <sprite>sprites\spr_battletype</sprite>
     <sprite>sprites\spr_maptext</sprite>
     <sprite>sprites\spr_gargoyle</sprite>
+    <sprites name="Opening Scene">
+      <sprite>sprites\spr_ember</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -178,6 +181,7 @@
     <objects name="Opening Cutscene">
       <object>objects\obj_openingtitles</object>
       <object>objects\obj_openingnarration</object>
+      <object>objects\obj_openingparticle</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -185,7 +189,7 @@
     <room>rooms\rm_opening</room>
     <room>rooms\rm_battle</room>
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_opening</room>
+    <room>rooms\rm_closing</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

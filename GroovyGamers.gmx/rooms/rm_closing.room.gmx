@@ -57,7 +57,6 @@
   <instances>
     <instance objName="obj_openingnarration" x="32" y="32" name="inst_63BE5CBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_openingtitles" x="0" y="32" name="inst_B4FB6F6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_openingparticle" x="64" y="32" name="inst_71A296F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
