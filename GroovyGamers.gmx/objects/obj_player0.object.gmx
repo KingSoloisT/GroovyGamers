@@ -30,6 +30,8 @@ image_xscale = 0.125;
 image_yscale = 0.125;
 spd = 4; //Default 4?
 
+playerHP = 5;
+
 iPlayerMarkerX = x;
 iPlayerMarkerY = y;
 compass = false;
