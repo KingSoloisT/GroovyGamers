@@ -176,6 +176,7 @@
       <object>objects\obj_restart_game</object>
       <object>objects\obj_audioswitcher</object>
       <object>objects\obj_audioswitcher2</object>
+      <object>objects\obj_muter</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
