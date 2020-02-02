@@ -46,6 +46,10 @@ scr_CleanArea(); //- issue here
 
 view_hborder[0] = view_wview[0] / 2;
  view_vborder[0] = view_hview[0] / 2;
+ 
+//Variable to check if "Compass Found FX" has played
+
+compassfound = false;
 </string>
           </argument>
         </arguments>
@@ -219,6 +223,7 @@ if obj_cave2.x &gt; x {draw_sprite_stretched(spr_hud_e,0,0,0,1280,720);}
 if obj_cave2.y &gt; y {draw_sprite_stretched(spr_hud_s,0,0,0,1280,720);}
 if obj_cave2.x &lt; x {draw_sprite_stretched(spr_hud_w,0,0,0,1280,720);}
 }
+
 //draw_sprite(spr_hud_border, 0, view_xview[0], view_yview[0]);
 </string>
           </argument>
