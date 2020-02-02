@@ -132,7 +132,7 @@ if timerAllowed &gt; 0 and pPressed == 0 {
         timerAllowed -= 1;
         zoomBGLevel -= 0.002/20;
         zoomFGLevel += 0.002/5; //timerIntro / (2*zoomTime);
-        
+        /*
         if keyboard_check(ord("A")) { //lance
             pWeap = 0;
             pPressed = 1;
@@ -145,6 +145,7 @@ if timerAllowed &gt; 0 and pPressed == 0 {
             pWeap = 2;
             pPressed = 1;
             }
+            */
         }
     }
 

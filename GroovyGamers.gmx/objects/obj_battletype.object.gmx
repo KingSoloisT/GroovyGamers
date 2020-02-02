@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>battletype = "sword"; //default was sword
+            <string>battletype = "lancer"; //default was sword
 
 battletrigger = true;
 battlerotation = 0;
@@ -67,7 +67,7 @@ if (toggleSwitch)
     //toggleSwitch = true;
     xsize += 0.003;
     ysize += 0.003;
-    if (xsize &gt;= 0.40)
+    if (xsize &gt;= 0.35)
     {
         toggleSwitch = false;
     }

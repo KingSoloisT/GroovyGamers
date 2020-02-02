@@ -256,7 +256,8 @@ alarm[8] = 900;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_enter)
+            <string>/*
+if keyboard_check(vk_enter)
 {
     if audio_is_playing(fx_opening)
     {
@@ -288,11 +289,11 @@ alarm[8] = 900;
             <kind>1</kind>
             <string>draw_set_colour(c_black);
 draw_set_font(font0);
-draw_text(403,653,subtitle);
+draw_text(503,653,subtitle);
 
 draw_set_colour(c_white);
 draw_set_font(font0);
-draw_text(400,650,subtitle);
+draw_text(500,650,subtitle);
 
 
 
