@@ -65,6 +65,11 @@
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_hud_border</sprite>
+    <sprite>sprites\spr_hud_compass</sprite>
+    <sprite>sprites\spr_hud_w</sprite>
+    <sprite>sprites\spr_hud_e</sprite>
+    <sprite>sprites\spr_hud_s</sprite>
+    <sprite>sprites\spr_hud_n</sprite>
     <sprite>sprites\spr_chasermask</sprite>
     <sprite>sprites\spr_Light</sprite>
     <sprite>sprites\sprSpeedLines</sprite>
