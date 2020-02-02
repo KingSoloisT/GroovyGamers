@@ -34,8 +34,10 @@ zoomFGLevel = 0;
 fightComplete = 0;
 pHasWon = 0;        //output reslts
 bgBlend = c_white;
-pX = 250;
-eX = -250;
+pX = 300*2;
+eX = -250*2;
+pInd = 0;
+eInd = 0;
 
 //set these when creating this object
 eWeap = 1;          //enemy weapon
@@ -43,7 +45,7 @@ timerAllowedMax = 5 * room_speed;   //input time
 timerAllowed = timerAllowedMax;
 //playerHP = 100;
 pWeap = -1;          //player weapon choice
-pSpr = sprKnight;   //player sprite0.
+pSpr = sprLancer;   //player sprite0.
 eSpr = sprBarb;     //enemy sprite
 
 
@@ -83,19 +85,19 @@ if timerIntro &gt; 0 and timerAnimation &lt; 60 {
     shader_set_uniform_f(ssize, 0.01 + 0.1 * (1.0 - 1.0 * (timerAllowed / timerAllowedMax)));
 
     }
-draw_sprite_ext(sprGrass, 0, view_xview + view_wview / 2, view_yview + view_hview / 2, zoomBGLevel, zoomBGLevel, 3 + (zoomTime - timerIntro) / 50, bgBlend, image_alpha);
+draw_sprite_ext(sprGrass, 0, view_xview + view_wview / 2, view_yview + view_hview / 2, zoomBGLevel * 2.5, zoomBGLevel * 2.5, 3 + (zoomTime - timerIntro) / 50, bgBlend, image_alpha);
 shader_reset();
 
 surface_set_target(surf);
 draw_clear_alpha(c_black,0);
-draw_background_ext(backGround, 0, view_yview + 360 + 50, 1, 1, 1, bgBlend, 1);
-draw_sprite(eSpr, 0, view_xview + view_wview / 2 + eX, view_yview + view_hview / 2 + 50)
-draw_sprite_ext(pSpr, 0, view_xview + view_wview / 2 + pX, view_yview + view_hview / 2 + 50, -1, 1, 0, c_white, 1)
+draw_background_ext(backGround, 0, view_yview + 650, 2.5, 2.5, 1, bgBlend, 1);
+draw_sprite(eSpr, eInd, view_xview + view_wview / 2 + eX, view_yview + view_hview / 2 + 100)
+draw_sprite_ext(pSpr, pInd, view_xview + view_wview / 2 + pX, view_yview + view_hview / 2 + 100, -1, 1, 0, c_white, 1)
 surface_reset_target();
 
 if surface_exists(surf) {
     if timerIntro &lt; room_speed * 8 {
-        draw_surface_ext(surf, 0-(zoomTime - timerIntro)/10 - timerIntro/5, 0-(zoomTime - timerIntro)*0, zoomFGLevel, zoomFGLevel, 3 + (zoomTime - timerIntro) / 50, c_white, image_alpha);
+        draw_surface_ext(surf, 0-2*(zoomTime - timerIntro)/10 - timerIntro/5, (zoomTime - timerIntro) / 2 + 150, zoomFGLevel, zoomFGLevel, 3 + (zoomTime - timerIntro) / 50, c_white, image_alpha);
         } else {
         draw_surface_ext(surf, -46.5, 0, 1.192, 1.192, 5 - 9.3, c_white, image_alpha);
         }
@@ -105,7 +107,7 @@ draw_background_ext(background1, view_xview, view_yview, 1, 1, 0, c_white, image
  
 if timerIntro &lt; zoomTime {
     zoomBGLevel = timerIntro / zoomTime;
-    zoomFGLevel = zoomBGLevel
+    zoomFGLevel = zoomBGLevel;
     }
 
 //press a button
@@ -113,12 +115,17 @@ if timerAllowed &gt; 0 and pPressed == 0 {
     timerIntro += 1;
     if timerIntro &gt; zoomTime {
         scrDrawUI();
+        pInd += 0.1;
+        if pInd &gt;= 2.5 {
+            pInd = 0;
+            }
+        eInd = pInd;
         draw_sprite(sprSpeedLines, -1, view_xview + view_wview / 2, view_yview + view_hview / 2);
-        draw_sprite_ext(sprDraw, 0, view_xview + view_wview / 2, view_yview + view_hview / 2 - 100, 0.75, 0.75, 0, c_white, 1);
+        draw_sprite_ext(sprDraw, 0, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250, 0.75, 0.75, 0, c_white, 1);
         draw_set_colour(c_dkgray);
-        draw_rectangle(view_xview + view_wview / 2 - 100, view_yview + 320, view_xview + view_wview / 2 + 100, view_yview + 340, false);
+        draw_rectangle(view_xview + view_wview / 2 - 150, view_yview + 500, view_xview + view_wview / 2 + 150, view_yview + 530, false);
         draw_set_colour(c_red);
-        draw_rectangle(view_xview + view_wview / 2 - 100, view_yview + 320, view_xview + view_wview / 2 - 100 + 200 * (timerAllowed / timerAllowedMax), view_yview + 340, false);
+        draw_rectangle(view_xview + view_wview / 2 - 150, view_yview + 500, view_xview + view_wview / 2 - 150 + 300 * (timerAllowed / timerAllowedMax), view_yview + 530, false);
         timerAllowed -= 1;
         zoomBGLevel -= 0.002/20;
         zoomFGLevel += 0.002/5; //timerIntro / (2*zoomTime);
@@ -154,11 +161,12 @@ if fightComplete == 1 {
     if timerAnimation &lt; 60 {
         //play animation
         if pWeap &gt;= 0 {
-            draw_sprite(sprWeap, pWeap, view_xview + 600, view_yview + 100);
+            draw_sprite(sprWeap, pWeap, view_xview + 1980 - 300, view_yview + 100);
             } else {
-            draw_sprite(sprWeap, 3, view_xview + 600, view_yview + 100);
+            draw_sprite(sprWeap, 3, view_xview + 1980 - 300, view_yview + 100);
+            draw_sprite(sprWinLose, 2, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
             }
-        draw_sprite(sprWeap, eWeap, view_xview + 200, view_yview + 100);
+        draw_sprite(sprWeap, eWeap, view_xview + 300, view_yview + 100);
         }
     if timerAnimation &gt;= 60 &amp;&amp; timerAnimation &lt; 70 {
         draw_set_colour(c_white);
@@ -167,14 +175,25 @@ if fightComplete == 1 {
         draw_set_alpha(1);
         }
     if timerAnimation &gt;= 60 {
-    draw_sprite(sprWinLose, pHasWon, view_xview + view_wview / 2, view_yview + view_hview / 2 - 150);
-    if pHasWon == 0 {
-        bgBlend = c_red;
-        }
+        draw_sprite(sprWinLose, pHasWon, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
+        if pHasWon == 0 {
+            bgBlend = c_red;
+            }
         if pHasWon {
             pX = -175;
+            pInd = 3;
+            eInd = 5;
             } else {
             eX = 175;
+            pInd = 5;
+            eInd = 3;
+            }
+        }
+    if timerAnimation &gt;= 150 {
+        if pHasWon {
+            pInd = 0;
+            } else {
+            eInd = 0;
             }
         }
     if timerAnimation &gt;= 180 {

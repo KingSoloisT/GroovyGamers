@@ -29,84 +29,6 @@
 image_yscale = 0.5;
 soundplayed = false;
 
-if (place_meeting(x, y, obj_mountain0))
-{
-    instance_destroy(obj_mountain0);
-}
-
-if (place_meeting(x, y, obj_mountain1))
-{
-    instance_destroy(obj_mountain1);
-}
-
-if (place_meeting(x, y, obj_mountain2))
-{
-    instance_destroy(obj_mountain2);
-}
-
-if (place_meeting(x, y, obj_lake0))
-{
-    instance_destroy(obj_lake0);
-}
-
-if (place_meeting(x, y, obj_lake1))
-{
-    instance_destroy(obj_lake1);
-}
-
-if (place_meeting(x, y, obj_lake2))
-{
-    instance_destroy(obj_lake2);
-}
-
-if (place_meeting(x, y, obj_mountain_range0))
-{
-    instance_destroy(obj_mountain_range0);
-}
-
-if (place_meeting(x, y, obj_mountain_range1))
-{
-    instance_destroy(obj_mountain_range1);
-}
-
-if (place_meeting(x, y, obj_mountain_range2))
-{
-    instance_destroy(obj_mountain_range2);
-}
-
-if (place_meeting(x, y, obj_forest0))
-{
-    instance_destroy(obj_forest0);
-}
-if (place_meeting(x, y, obj_forest1))
-{
-    instance_destroy(obj_forest1);
-}
-
-if (place_meeting(x, y, obj_cave0))
-{
-    instance_destroy(obj_cave0);
-}
-
-if (place_meeting(x, y, obj_cave1))
-{
-    instance_destroy(obj_cave1);
-}
-
-if (place_meeting(x, y, obj_house0))
-{
-    instance_destroy(obj_house0);
-}
-
-if (place_meeting(x, y, obj_town0))
-{
-    instance_destroy(obj_town0);
-}
-
-if (place_meeting(x, y, obj_town1))
-{
-    instance_destroy(obj_town1);
-}
 </string>
           </argument>
         </arguments>
@@ -162,5 +84,8 @@ if (collision_circle( x, y, sprite_width * 1.2, obj_player0, false, false )) //n
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>627,326</point>
+    <point>646,646</point>
+  </PhysicsShapePoints>
 </object>

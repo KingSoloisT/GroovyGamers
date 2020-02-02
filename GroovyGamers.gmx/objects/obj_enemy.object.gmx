@@ -76,7 +76,7 @@ if location = 4
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(self);
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -124,5 +124,8 @@ if place_meeting(x,y,obj_player0)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>266,254</point>
+    <point>266,266</point>
+  </PhysicsShapePoints>
 </object>

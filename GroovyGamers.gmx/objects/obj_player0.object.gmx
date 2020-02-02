@@ -260,5 +260,8 @@ surface_reset_target();
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>266,266</point>
+    <point>266,266</point>
+  </PhysicsShapePoints>
 </object>

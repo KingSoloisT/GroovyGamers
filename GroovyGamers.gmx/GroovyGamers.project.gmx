@@ -68,6 +68,8 @@
     <sprite>sprites\spr_chasermask</sprite>
     <sprite>sprites\spr_Light</sprite>
     <sprite>sprites\sprSpeedLines</sprite>
+    <sprite>sprites\sprSword</sprite>
+    <sprite>sprites\sprLancer</sprite>
     <sprites name="Battle">
       <sprite>sprites\sprBarb</sprite>
       <sprite>sprites\sprKnight</sprite>
