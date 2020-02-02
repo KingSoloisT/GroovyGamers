@@ -72,6 +72,7 @@ if (mouseclicked_battletype)
     
     if battletype = "sword" &amp;&amp; battletrigger
     {
+        objBattle.pSpr = sprSword;
         battletrigger = false;
         battletype = "arrow"
         battlerotation = 0;
@@ -86,6 +87,7 @@ if (mouseclicked_battletype)
     
     if battletype = "lance" &amp;&amp; battletrigger
     {
+        objBattle.pSpr = sprLancer;
         battletrigger = false;
         battletype = "sword"
         battlerotation = 90;
