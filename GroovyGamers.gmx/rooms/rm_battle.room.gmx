@@ -10,7 +10,14 @@
   <persistent>0</persistent>
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(0,0, objBattle);</code>
+  <code>d = instance_create(0,0, objBattle);
+
+//global.Boss
+
+if (global.Boss == true)
+{
+    d.eSpr = spr_gargoyle;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

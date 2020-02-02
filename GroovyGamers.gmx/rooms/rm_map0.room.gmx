@@ -10,7 +10,9 @@
   <persistent>-1</persistent>
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
-  <code>//Below for amount 
+  <code>global.Boss = false;
+
+//Below for amount 
 global.iMaxmountain0 = 30;
 global.iMaxmountain1 = 30;
 global.iMaxmountain2 = 30;

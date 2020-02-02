@@ -200,7 +200,18 @@ if fightComplete == 1 {
         image_alpha -= 0.1;
         }
     if timerAnimation &gt;= 200 {
+        if (pHasWon == 0)
+        {
+            playerHP -= 1;
+        }
+        
         instance_destroy();
+        
+        if (eSpr == spr_gargoyle)
+        {
+            room_goto(rm_closing);
+        }
+        
         }
     }
 </string>

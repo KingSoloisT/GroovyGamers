@@ -87,6 +87,7 @@
       <sprite>sprites\sprLance</sprite>
       <sprite>sprites\sprWarrior</sprite>
       <sprite>sprites\sprArcher</sprite>
+      <sprite>sprites\spr_gargoyle</sprite>
     </sprites>
     <sprites name="Terrain">
       <sprite>sprites\spr_mountain0</sprite>
@@ -109,7 +110,6 @@
     </sprites>
     <sprite>sprites\spr_battletype</sprite>
     <sprite>sprites\spr_maptext</sprite>
-    <sprite>sprites\spr_gargoyle</sprite>
     <sprites name="Opening Scene">
       <sprite>sprites\spr_ember</sprite>
     </sprites>
