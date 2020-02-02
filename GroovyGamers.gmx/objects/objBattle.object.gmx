@@ -47,7 +47,7 @@ timerAllowed = timerAllowedMax;
 //playerHP = 100;
 pWeap = -1;          //player weapon choice
 pSpr = sprLancer;   //player sprite0.
-eSpr = sprBarb;     //enemy sprite
+eSpr = choose(sprLancer,sprSword,sprArcher);     //enemy sprite
 
 
 surf = surface_create(view_wview + 200, view_hview + 200);
@@ -166,6 +166,7 @@ if fightComplete == 1 {
             } else {
             draw_sprite(sprWeap, 3, view_xview + 1980 - 300, view_yview + 100);
             draw_sprite(sprWinLose, 2, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
+            //room_goto(rm_map0);
             }
         draw_sprite(sprWeap, eWeap, view_xview + 300, view_yview + 100);
         }
@@ -177,6 +178,7 @@ if fightComplete == 1 {
         }
     if timerAnimation &gt;= 60 {
         draw_sprite(sprWinLose, pHasWon, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
+        //room_goto(rm_map0);
         if pHasWon == 0 {
             bgBlend = c_red;
             }
@@ -210,6 +212,7 @@ if fightComplete == 1 {
         }
     if timerAnimation &gt;= 180 {
         image_alpha -= 0.1;
+
         }
     if timerAnimation &gt;= 200 {
         if (pHasWon == 0)
@@ -217,7 +220,9 @@ if fightComplete == 1 {
             global.playerHP -= 1;
         }
         
+
         instance_destroy();
+        room_goto(rm_map0);
         
         if (eSpr == spr_gargoyle)
         {

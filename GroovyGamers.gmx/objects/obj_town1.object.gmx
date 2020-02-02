@@ -28,6 +28,7 @@
             <string>image_xscale = 0.5;
 image_yscale = 0.5;
 soundplayed = false;
+used = false;
 
 if (place_meeting(x, y, obj_mountain0))
 {
@@ -130,6 +131,11 @@ if (place_meeting(x, y, obj_town1))
           <argument>
             <kind>1</kind>
             <string>draw_self();
+if place_meeting(x,y,obj_player0) &amp;&amp; used = false
+{
+    global.playerHP +=3;
+    used = true;
+}
 
 //collision_circle( x, y, sprite_width * 2, obj_player0, false, false );
 

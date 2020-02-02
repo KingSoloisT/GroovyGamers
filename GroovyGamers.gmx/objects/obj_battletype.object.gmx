@@ -32,8 +32,8 @@ battlerotation = 0;
 
 mouseclicked_battletype = true;
 
-image_xscale = 0.5;
-image_yscale = 0.5;
+xsize = 0.35;
+ysize = 0.35;
 </string>
           </argument>
         </arguments>
@@ -56,14 +56,25 @@ image_yscale = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_check_button_pressed(mb_right)
-{
-    room_goto(rm_map0);
+            <string>image_xscale = xsize
+image_yscale = ysize
 
+if xsize &gt;= 0.30
+{
+xsize += 0.01
+ysize += 0.01
 }
 
-//image_angle = battlerotation;
+if xsize &lt;= 0.40
+{
+xsize -= 0.01
+ysize -= 0.01
+}
 
+
+if objBattle.fightComplete == 0
+{
+//image_angle = battlerotation;
 //if mouse_check_button_released(mb_left)
 if (mouseclicked_battletype)
 {
@@ -82,6 +93,7 @@ if (mouseclicked_battletype)
     
     if battletype = "arrow" &amp;&amp; battletrigger
     {
+        objBattle.pSpr = sprArcher;
         objBattle.pWeap = 2;
         battletrigger = false;
         battletype = "lance"
@@ -98,6 +110,7 @@ if (mouseclicked_battletype)
     }
     image_angle = battlerotation;
     battletrigger = true;
+}
 }
 </string>
           </argument>

@@ -114,7 +114,9 @@ view_hborder[0] = view_wview[0] / 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>view_hspeed[0] = -1;
+            <string>if global.playerHP &lt;= 0 {room_goto(rm_gameover);}
+if global.playerHP &gt;= 5 {global.playerHp = 5;}
+view_hspeed[0] = -1;
 view_vspeed[0] = -1;
 
 //view_hborder[0] = 960‬;
@@ -202,7 +204,11 @@ if place_meeting(x,y,obj_cave1) || place_meeting(x,y,obj_cave0)
           <argument>
             <kind>1</kind>
             <string>display_set_gui_size(1280,720);
-draw_sprite_stretched(spr_hud_border,0,0,0,1280,720);
+if global.playerHP &gt;= 5 {draw_sprite_stretched(spr_hud_borderhp5,0,0,0,1280,720);}
+if global.playerHP = 4 {draw_sprite_stretched(spr_hud_borderhp4,0,0,0,1280,720);}
+if global.playerHP = 3 {draw_sprite_stretched(spr_hud_borderhp3,0,0,0,1280,720);}
+if global.playerHP = 2 {draw_sprite_stretched(spr_hud_borderhp2,0,0,0,1280,720);}
+if global.playerHP = 1 {draw_sprite_stretched(spr_hud_borderhp1,0,0,0,1280,720);}
 
 if compass = true
 {

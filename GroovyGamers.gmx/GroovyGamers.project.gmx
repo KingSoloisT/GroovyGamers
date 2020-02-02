@@ -64,7 +64,12 @@
     <sprite>sprites\spr_trail</sprite>
     <sprite>sprites\spr_start</sprite>
     <sprite>sprites\spr_quit</sprite>
-    <sprite>sprites\spr_hud_border</sprite>
+    <sprite>sprites\spr_hud_borderhp0</sprite>
+    <sprite>sprites\spr_hud_borderhp5</sprite>
+    <sprite>sprites\spr_hud_borderhp4</sprite>
+    <sprite>sprites\spr_hud_borderhp3</sprite>
+    <sprite>sprites\spr_hud_borderhp2</sprite>
+    <sprite>sprites\spr_hud_borderhp1</sprite>
     <sprite>sprites\spr_hud_compass</sprite>
     <sprite>sprites\spr_hud_w</sprite>
     <sprite>sprites\spr_hud_e</sprite>
@@ -115,6 +120,7 @@
       <sprite>sprites\spr_ember</sprite>
       <sprite>sprites\spr_credits</sprite>
     </sprites>
+    <sprite>sprites\spr_healthbar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -158,6 +164,7 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_displaymanager</object>
       <object>objects\obj_subtitles</object>
+      <object>objects\obj_restart_game</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
@@ -212,6 +219,7 @@
     <room>rooms\rm_map0</room>
     <room>rooms\rm_battle</room>
     <room>rooms\rm_closing</room>
+    <room>rooms\rm_gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
