@@ -28,7 +28,6 @@
             <string>None = ""
 subtitle = None;
 
-
 //Intro
 Intro1 = "In times of hardship,"
 Intro2 = "when the roads are dangerous as the night is black,"
@@ -45,11 +44,9 @@ Ending3 =  "and set off to further immortalize themselves in the lore of old."
 alarm[0] = 70;
 alarm[1] = 120;
 alarm[2] = 200;
-alarm[3] = 450;
-alarm[4] = 500;
-alarm[5] = 600;
-
-
+alarm[3] = 380;
+alarm[4] = 480;
+alarm[5] = 660;
 </string>
           </argument>
         </arguments>
@@ -193,37 +190,6 @@ alarm[5] = 600;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-//narrator
-if audio_is_playing(fx_opening){subtitle = Intro1; if alarm[0] = -1 {alarm[0] = 60}}
-if audio_is_playing(fx_opening){subtitle = Intro2; if alarm[1] = -1 {alarm[0] = 60}}
-if audio_is_playing(fx_opening){subtitle = Intro3; if alarm[2] = -1 {alarm[0] = 60}}
-if audio_is_playing(fx_opening){subtitle = Intro4; if alarm[3] = -1 {alarm[0] = 60}}
-if audio_is_playing(fx_opening){subtitle = Intro5; if alarm[4] = -1 {alarm[0] = 60}}
-if audio_is_playing(fx_opening){subtitle = Intro6; if alarm[5] = -1 {alarm[0] = 60}}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -243,11 +209,11 @@ if audio_is_playing(fx_opening){subtitle = Intro6; if alarm[5] = -1 {alarm[0] = 
             <kind>1</kind>
             <string>draw_set_colour(c_black);
 draw_set_font(font0);
-draw_text(503,653,subtitle);
+draw_text(403,653,subtitle);
 
 draw_set_colour(c_white);
 draw_set_font(font0);
-draw_text(500,650,subtitle);
+draw_text(400,650,subtitle);
 
 
 
