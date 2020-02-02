@@ -28,7 +28,7 @@
             <string>moveing = false;
 image_xscale = 0.125;
 image_yscale = 0.125;
-spd = 100; //Default 2
+spd = 50; //Default 2
 </string>
           </argument>
         </arguments>

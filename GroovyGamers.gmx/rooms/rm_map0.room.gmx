@@ -43,9 +43,9 @@ instance_create(0, 0, obj_subtitles);
 
 instance_create(0, 0, obj_World_Fog);
 
-instance_create(960, 540, obj_mountain0);
-instance_create(1440, 810, obj_mountain1);
-instance_create(1920, 1080, obj_mountain2);
+//instance_create(960, 540, obj_mountain0);
+//instance_create(1440, 810, obj_mountain1);
+//instance_create(1920, 1080, obj_mountain2);
 
 instance_create(0,0,obj_hud_border);
 

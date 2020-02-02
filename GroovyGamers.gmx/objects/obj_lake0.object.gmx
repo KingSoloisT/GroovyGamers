@@ -132,7 +132,7 @@ if (place_meeting(x, y, obj_town1))
 //collision_circle( x, y, sprite_width * 2, obj_player0, false, false );
 
 //if (place_meeting(x, y, obj_player0))
-if (collision_circle( x, y, sprite_width * 1.5, obj_player0, false, false )) //notme true/false??? - Radius for when the fog shows (distance)
+if (collision_circle( x, y, sprite_width * 1, obj_player0, false, false )) //notme true/false??? - Radius for when the fog shows (distance)
 {
     surface_set_target(obj_World_Fog.sFog);
 

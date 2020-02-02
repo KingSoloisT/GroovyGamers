@@ -129,13 +129,13 @@ if (place_meeting(x, y, obj_town1))
             <kind>1</kind>
             <string>draw_self();
 
-if (collision_circle( x, y, sprite_width * 1.5, obj_player0, false, false )) //notme true/false??? - Radius for when the fog shows (distance)
+if (collision_circle( x, y, sprite_width * 0.7, obj_player0, false, false )) //notme true/false??? - Radius for when the fog shows (distance)
 {
     surface_set_target(obj_World_Fog.sFog);
 
     draw_set_blend_mode(bm_src_color);
     
-    draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 1, 1, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
+    draw_sprite_ext(spr_Light, 0, x / obj_World_Fog.res, y / obj_World_Fog.res, 2, 2, 0, 0, 1); // 2 for xscale/yscale - CHANGE THIS FOR THE SCALE OF CIRCLE
                                                             //colour was 0.
     draw_set_blend_mode(bm_normal);
     
