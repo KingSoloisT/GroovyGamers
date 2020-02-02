@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>battletype = "lancer"; //default was sword
+            <string>battletype = "sword"; //default was sword
 
 battletrigger = true;
 battlerotation = 0;

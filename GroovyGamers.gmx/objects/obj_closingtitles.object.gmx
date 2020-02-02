@@ -158,11 +158,11 @@ if !instance_exists(obj_credits)
             <kind>1</kind>
             <string>draw_set_colour(c_black);
 draw_set_font(font0);
-draw_text(403,653,subtitle);
+draw_text(403,653,subtitle); ////653
 
 draw_set_colour(c_white);
 draw_set_font(font0);
-draw_text(400,650,subtitle);
+draw_text(400,650,subtitle); ////650
 
 
 

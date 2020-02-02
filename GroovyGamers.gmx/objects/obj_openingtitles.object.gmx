@@ -289,14 +289,14 @@ if keyboard_check(vk_enter)
             <kind>1</kind>
             <string>draw_set_colour(c_black);
 draw_set_font(font0);
-draw_text(503,653,subtitle);
+draw_text(503 + 80,view_hview[0] - 100,subtitle); //653
 
 draw_set_colour(c_white);
 draw_set_font(font0);
-draw_text(500,650,subtitle);
+draw_text(500 + 180,view_hview[0] - 100 - 3,subtitle);  //650
 
 
-
+//view_yview[0] - 100
 
 
 
