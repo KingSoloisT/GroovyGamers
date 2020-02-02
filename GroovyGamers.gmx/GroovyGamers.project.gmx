@@ -109,6 +109,7 @@
       <background>background\background1</background>
       <background>background\backGround</background>
     </backgrounds>
+    <background>background\bg_parchment</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -135,6 +136,7 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_displaymanager</object>
       <object>objects\obj_subtitles</object>
+      <object>objects\obj_openingtitles</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
@@ -172,8 +174,12 @@
     <objects name="Fog Of War">
       <object>objects\obj_World_Fog</object>
     </objects>
+    <objects name="Opening Cutscene">
+      <object>objects\obj_openingnarration</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_opening</room>
     <room>rooms\rm_map0</room>
     <room>rooms\rm_battle</room>
     <room>rooms\rm_menu</room>
