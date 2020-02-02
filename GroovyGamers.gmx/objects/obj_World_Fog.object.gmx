@@ -34,16 +34,18 @@ surface_set_target(sFog);
 //draw_clear(c_black); //Default: c_black
 
 //draw_clear_alpha(c_black, 0.975);
-draw_background(background7, 0, 0);// view_xview, view_yview)
+//draw_background(background7, 0, 0);
+// view_xview, view_yview)
 
-//for (iX=0; iX&lt;CONDITION; iX+=1)
-//{
-    //STATEMENT;
-    //for (iY=0; iY&lt;CONDITION; iY+=1)
-    //{
-        //STATEMENT;
-    //}
-//}
+//1920 x 1080 background please for this code to work. or change it.
+
+for (iX=0; iX&lt;10; iX+=1)
+{
+    for (iY=0; iY&lt;10; iY+=1)
+    {
+        draw_background(bg_FogofWar, iX * 1920, iY * 1080);
+    }
+}
 
 surface_reset_target();
 </string>

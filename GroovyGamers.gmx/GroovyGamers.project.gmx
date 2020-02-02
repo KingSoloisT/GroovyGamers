@@ -127,6 +127,7 @@
     <background>background\bg_parchment</background>
     <background>background\bkg_title</background>
     <background>background\background7</background>
+    <background>background\bg_FogofWar</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
