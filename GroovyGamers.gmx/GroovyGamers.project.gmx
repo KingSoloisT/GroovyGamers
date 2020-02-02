@@ -194,14 +194,17 @@
       <object>objects\obj_openingtitles</object>
       <object>objects\obj_openingnarration</object>
       <object>objects\obj_openingparticle</object>
+      <objects name="Closing Cutscene">
+        <object>objects\obj_closingnarration</object>
+        <object>objects\obj_closingtitles</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_menu</room>
+    <room>rooms\rm_closing</room>
     <room>rooms\rm_opening</room>
     <room>rooms\rm_map0</room>
     <room>rooms\rm_battle</room>
-    <room>rooms\rm_closing</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
