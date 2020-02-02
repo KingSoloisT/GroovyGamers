@@ -47,6 +47,7 @@ alarm[2] = 200;
 alarm[3] = 380;
 alarm[4] = 480;
 alarm[5] = 660;
+alarm[6] = 800;
 </string>
           </argument>
         </arguments>
