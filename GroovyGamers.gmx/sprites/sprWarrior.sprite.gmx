@@ -7,17 +7,17 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>1</bbox_left>
-  <bbox_right>388</bbox_right>
-  <bbox_top>61</bbox_top>
-  <bbox_bottom>640</bbox_bottom>
+  <bbox_left>11</bbox_left>
+  <bbox_right>652</bbox_right>
+  <bbox_top>168</bbox_top>
+  <bbox_bottom>507</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>414</width>
+  <width>700</width>
   <height>700</height>
   <frames>
     <frame index="0">images\sprWarrior_0.png</frame>
