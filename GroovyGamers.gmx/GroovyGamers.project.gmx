@@ -122,6 +122,7 @@
   <scripts name="scripts">
     <scripts name="Battle">
       <script>scripts\scrDrawUI.gml</script>
+      <script>scripts\scrBattle.gml</script>
     </scripts>
     <script>scripts\scr_AdjustSpeed.gml</script>
   </scripts>
