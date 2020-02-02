@@ -125,9 +125,9 @@ if timerAllowed &gt; 0 and pPressed == 0 {
         eInd = pInd;
         draw_sprite(sprSpeedLines, -1, view_xview + view_wview / 2, view_yview + view_hview / 2);
         draw_sprite_ext(sprDraw, 0, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250, 0.75, 0.75, 0, c_white, 1);
-        draw_set_colour(c_dkgray);
+        draw_set_colour(c_black);
         draw_rectangle(view_xview + view_wview / 2 - 150, view_yview + 500, view_xview + view_wview / 2 + 150, view_yview + 530, false);
-        draw_set_colour(c_red);
+        draw_set_colour(c_orange);
         draw_rectangle(view_xview + view_wview / 2 - 150, view_yview + 500, view_xview + view_wview / 2 - 150 + 300 * (timerAllowed / timerAllowedMax), view_yview + 530, false);
         timerAllowed -= 1;
         zoomBGLevel -= 0.002/20;
@@ -182,7 +182,7 @@ if fightComplete == 1 {
         draw_sprite(sprWinLose, pHasWon, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
         //room_goto(rm_map0);
         if pHasWon == 0 {
-            bgBlend = c_red;
+            bgBlend = c_dkgray;
             }
         if pHasWon {
             if pSpr != sprArcher {
