@@ -7,22 +7,24 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>82</bbox_left>
-  <bbox_right>559</bbox_right>
-  <bbox_top>147</bbox_top>
-  <bbox_bottom>634</bbox_bottom>
+  <bbox_left>26</bbox_left>
+  <bbox_right>707</bbox_right>
+  <bbox_top>131</bbox_top>
+  <bbox_bottom>618</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>650</width>
+  <width>800</width>
   <height>750</height>
   <frames>
     <frame index="0">images\spr_gargoyle_0.png</frame>
     <frame index="1">images\spr_gargoyle_1.png</frame>
     <frame index="2">images\spr_gargoyle_2.png</frame>
     <frame index="3">images\spr_gargoyle_3.png</frame>
+    <frame index="4">images\spr_gargoyle_4.png</frame>
+    <frame index="5">images\spr_gargoyle_5.png</frame>
   </frames>
 </sprite>

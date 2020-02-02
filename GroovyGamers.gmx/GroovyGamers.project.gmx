@@ -80,6 +80,8 @@
     <sprite>sprites\sprSpeedLines</sprite>
     <sprite>sprites\sprSword</sprite>
     <sprite>sprites\sprLancer</sprite>
+    <sprite>sprites\sprArcher</sprite>
+    <sprite>sprites\spr_gargoyle</sprite>
     <sprite>sprites\sprHP</sprite>
     <sprites name="Battle">
       <sprite>sprites\sprBarb</sprite>
@@ -91,8 +93,6 @@
       <sprite>sprites\sprArrow</sprite>
       <sprite>sprites\sprLance</sprite>
       <sprite>sprites\sprWarrior</sprite>
-      <sprite>sprites\sprArcher</sprite>
-      <sprite>sprites\spr_gargoyle</sprite>
       <sprite>sprites\spr_Arrow</sprite>
     </sprites>
     <sprites name="Terrain">
