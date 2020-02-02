@@ -28,7 +28,9 @@
             <string>vspeed = -1;
 depth = -50;
 
-alarm[0] = 3800;
+//alarm[0] = 3800;
+
+alarm[0] = room_speed * 62;
 </string>
           </argument>
         </arguments>
@@ -51,7 +53,9 @@ alarm[0] = 3800;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_menu);
+            <string>//room_goto(rm_menu);
+
+game_restart();
 </string>
           </argument>
         </arguments>

@@ -225,21 +225,31 @@ if fightComplete == 1 {
         }
         
     if timerAnimation &gt;= 200 {
-        if (pHasWon == 0)
+    
+        if (pHasWon == 0) //loss
         {
             global.playerHP -= 1;
         }
+            //if (eSpr == spr_gargoyle)
+            //{
+                //instance_destroy();
+                //room_goto(rm_map0);
+            //}
+            
+            instance_destroy();
+            room_goto(rm_map0);
         
-
-        instance_destroy();
-        room_goto(rm_map0);
-        
-        if (eSpr == spr_gargoyle)
-        {
-            room_goto(rm_closing);
-        }
-        
-        
+        //else //win
+        //{
+            if (eSpr == spr_gargoyle)
+            {
+                //instance_destroy();
+                room_goto(rm_closing);
+            }
+            
+            //instance_destroy();
+            //room_goto(rm_map0);
+        //}
     }
 </string>
           </argument>
