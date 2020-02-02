@@ -54,6 +54,7 @@ surf = surface_create(view_wview + 200, view_hview + 200);
 
 ssize = shader_get_uniform(shader1,"size");//uniform for width, height, radius
 spos=shader_get_uniform(shader1,"pos");
+
 </string>
           </argument>
         </arguments>
@@ -154,6 +155,10 @@ if pPressed == 1 or timerAllowed &lt;= 0 {
     if eWeap - pWeap == 1 or (eWeap == 0 and pWeap == 2) or pWeap == -1 {
         pHasWon = 0;
         fightComplete = 1;
+        if !audio_is_playing(fx_h1grunt3)
+        {
+            audio_play_sound(fx_h1grunt3,1,false);
+        }
         } else {
         //ties count as winning for now
         pHasWon = 1;

@@ -59,6 +59,8 @@
     </sounds>
     <sounds name="Battle Sounds">
       <sound>sound\fx_battlehit</sound>
+      <sound>sound\fx_gargoyledie</sound>
+      <sound>sound\fx_gargoylehi</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -223,9 +225,9 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_map0</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_opening</room>
-    <room>rooms\rm_map0</room>
     <room>rooms\rm_battle</room>
     <room>rooms\rm_closing</room>
     <room>rooms\rm_gameover</room>
