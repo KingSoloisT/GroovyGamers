@@ -38,6 +38,7 @@ pX = 300*2;
 eX = -250*2;
 pInd = 0;
 eInd = 0;
+ 
 
 //set these when creating this object
 eWeap = 1;          //enemy weapon

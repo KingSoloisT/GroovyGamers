@@ -11,7 +11,7 @@
   <colour>8454143</colour>
   <showcolour>-1</showcolour>
   <code>global.Boss = false;
-
+global.playerHP = 5;
 //Below for amount 
 global.iMaxmountain0 = 30;
 global.iMaxmountain1 = 30;
