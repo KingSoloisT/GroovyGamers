@@ -136,7 +136,6 @@
       <object>objects\obj_quit</object>
       <object>objects\obj_displaymanager</object>
       <object>objects\obj_subtitles</object>
-      <object>objects\obj_openingtitles</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
@@ -175,6 +174,7 @@
       <object>objects\obj_World_Fog</object>
     </objects>
     <objects name="Opening Cutscene">
+      <object>objects\obj_openingtitles</object>
       <object>objects\obj_openingnarration</object>
     </objects>
   </objects>
