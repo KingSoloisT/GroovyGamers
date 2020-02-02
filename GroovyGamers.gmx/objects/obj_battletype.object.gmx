@@ -34,6 +34,8 @@ mouseclicked_battletype = true;
 
 xsize = 0.35;
 ysize = 0.35;
+
+toggleSwitch = true;
 </string>
           </argument>
         </arguments>
@@ -59,17 +61,34 @@ ysize = 0.35;
             <string>image_xscale = xsize
 image_yscale = ysize
 
-if xsize &gt;= 0.30
+//if xsize &lt;= 0.20 
+if (toggleSwitch)
 {
-xsize += 0.01
-ysize += 0.01
+    //toggleSwitch = true;
+    xsize += 0.003;
+    ysize += 0.003;
+    if (xsize &gt;= 0.40)
+    {
+        toggleSwitch = false;
+    }
 }
-
-if xsize &lt;= 0.40
+else
+//if xsize &gt;= 0.40
+if (!toggleSwitch)
 {
-xsize -= 0.01
-ysize -= 0.01
+    //toggleSwitch = false;
+    xsize -= 0.003;
+    ysize -= 0.003;
+    if (xsize &lt;= 0.30)
+    {
+        toggleSwitch = true;
+    }
 }
+//else if (xsize &gt;= 0.20)
+//{
+    //xsize += 0.001;
+    //ysize += 0.001;
+//}
 
 
 if objBattle.fightComplete == 0

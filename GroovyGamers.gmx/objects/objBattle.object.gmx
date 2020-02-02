@@ -133,15 +133,15 @@ if timerAllowed &gt; 0 and pPressed == 0 {
         zoomBGLevel -= 0.002/20;
         zoomFGLevel += 0.002/5; //timerIntro / (2*zoomTime);
         
-        if keyboard_check(ord("A")) {
+        if keyboard_check(ord("A")) { //lance
             pWeap = 0;
             pPressed = 1;
             }
-        if keyboard_check(ord("S")) {
+        if keyboard_check(ord("S")) { //sword
             pWeap = 1;
             pPressed = 1;
             }
-        if keyboard_check(ord("D")) {
+        if keyboard_check(ord("D")) { //bow % arrow
             pWeap = 2;
             pPressed = 1;
             }
@@ -150,7 +150,7 @@ if timerAllowed &gt; 0 and pPressed == 0 {
 
 //attack
 if pPressed == 1 or timerAllowed &lt;= 0 {
-    if eWeap - pWeap == 1 or (eWeap == 0 and pWeap ==2) or pWeap == -1 {
+    if eWeap - pWeap == 1 or (eWeap == 0 and pWeap == 2) or pWeap == -1 {
         pHasWon = 0;
         fightComplete = 1;
         } else {
@@ -165,8 +165,8 @@ if fightComplete == 1 {
         //play animation
         if pWeap &gt;= 0 {
             draw_sprite(sprWeap, pWeap, view_xview + 1980 - 300, view_yview + 100);
-            } else {
-            draw_sprite(sprWeap, 3, view_xview + 1980 - 300, view_yview + 100);
+            } else { //CORY'S Code doesn't allow for too late stuff anymore.
+            draw_sprite(sprWeap, 3, view_xview + 1980 - 300, view_yview + 100); //sub image was 3
             draw_sprite(sprWinLose, 2, view_xview + view_wview / 2, view_yview + view_hview / 2 - 250);
             //room_goto(rm_map0);
             }
@@ -184,7 +184,7 @@ if fightComplete == 1 {
         if pHasWon == 0 {
             bgBlend = c_dkgray;
             }
-        if pHasWon {
+        if pHasWon { //WIN
             if pSpr != sprArcher {
                 pX = -175;
                 } else {
@@ -192,8 +192,8 @@ if fightComplete == 1 {
                 }
             }
             
-            pInd = 3;
-            eInd = 5;
+            pInd = 3; //was 3?
+            eInd = 5; //was 5?
             } else {
             if pSpr != sprArcher {
                 eX = 175;
@@ -201,10 +201,15 @@ if fightComplete == 1 {
                 draw_sprite_ext(spr_Arrow,0,view_xview + view_wview / 2, view_yview + view_hview / 2 + pX - 150,  view_yview + view_hview / 2 - 50, 1, 0, c_white, 1);
                 }
             eX = 175;
-            pInd = 5;
-            eInd = 3;
+            pInd = 5; //was 5?
+            eInd = 3; //was 3?
             }
         }
+        
+        
+        
+        
+        
     if timerAnimation &gt;= 150 {
         if pHasWon {
             pInd = 0;
@@ -212,10 +217,12 @@ if fightComplete == 1 {
             eInd = 0;
             }
         }
+        
     if timerAnimation &gt;= 180 {
         image_alpha -= 0.1;
 
         }
+        
     if timerAnimation &gt;= 200 {
         if (pHasWon == 0)
         {
