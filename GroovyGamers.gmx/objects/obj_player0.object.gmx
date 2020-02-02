@@ -33,6 +33,17 @@ spd = 4; //Default 4?
 iPlayerMarkerX = x;
 iPlayerMarkerY = y;
 compass = false;
+
+AreaSizeToClean = 300;
+
+scr_CleanArea(); //- issue here
+
+//view_object[0] = obj_player0;
+//view_hborder[0] = 960‬;
+//view_hborder[0] = 540;
+
+view_hborder[0] = view_wview[0] / 2;
+ view_vborder[0] = view_hview[0] / 2;
 </string>
           </argument>
         </arguments>
@@ -101,7 +112,15 @@ compass = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//enemy ai
+            <string>view_hspeed[0] = -1;
+view_vspeed[0] = -1;
+
+//view_hborder[0] = 960‬;
+//view_vborder[0] = 540;
+
+view_object[0] = obj_player0;
+
+//enemy ai
 if (alarm[1] = -1) {alarm[1] = 300};
 
 

@@ -130,6 +130,7 @@
       <script>scripts\scrBattle.gml</script>
     </scripts>
     <script>scripts\scr_AdjustSpeed.gml</script>
+    <script>scripts\scr_CleanArea.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="Battle">
@@ -194,8 +195,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_opening</room>
     <room>rooms\rm_map0</room>
+    <room>rooms\rm_opening</room>
     <room>rooms\rm_battle</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_closing</room>

@@ -29,7 +29,11 @@ global.iMaxtown1 = 30;
 global.iMaxhouse0 = 30;
 global.iMaxcave2 = 1;
 
-instance_create(100, 100, obj_player0);
+instance_create(0,0,obj_TerrainCreator);
+
+//random_range(0 + 1500, room_width -  1500)
+
+instance_create(random_range(0 + 1500, room_width -  1500), random_range(0 + 1500, room_height -  1500), obj_player0);
 
 instance_create(0, 0, obj_controls);
 instance_create(0, 0, obj_subtitles);
@@ -38,7 +42,7 @@ instance_create(0, 0, obj_World_Fog);
 
 instance_create(0,0,obj_hud_border);
 
-instance_create(0,0,obj_TerrainCreator);
+//instance_create(0,0,obj_TerrainCreator);
 //start text
 startfx = choose(fx_h1start,fx_h2start,fx_h3start) 
 
