@@ -17,6 +17,10 @@
 if (global.Boss == true)
 {
     d.eSpr = spr_gargoyle;
+    if !audio_is_playing(fx_gargoylehi)
+    {
+        audio_play_sound(fx_gargoylehi,1,false);
+    }
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

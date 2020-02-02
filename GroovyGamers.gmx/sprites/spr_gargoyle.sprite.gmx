@@ -7,10 +7,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>92</bbox_left>
+  <bbox_left>83</bbox_left>
   <bbox_right>773</bbox_right>
   <bbox_top>131</bbox_top>
-  <bbox_bottom>621</bbox_bottom>
+  <bbox_bottom>638</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -27,5 +27,6 @@
     <frame index="4">images\spr_gargoyle_4.png</frame>
     <frame index="5">images\spr_gargoyle_5.png</frame>
     <frame index="6">images\spr_gargoyle_6.png</frame>
+    <frame index="7">images\spr_gargoyle_7.png</frame>
   </frames>
 </sprite>

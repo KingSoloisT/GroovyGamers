@@ -83,6 +83,13 @@ if keyboard_check(vk_enter)
 {
     room_goto(rm_menu);
 }
+
+*/
+
+if audio_is_playing(sng_baddies)
+{
+    audio_stop_sound(sng_baddies);
+}
 </string>
           </argument>
         </arguments>
