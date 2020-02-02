@@ -41,6 +41,7 @@ instance_create(0, 0, obj_controls);
 instance_create(0, 0, obj_subtitles);
 
 instance_create(0, 0, obj_World_Fog);
+instance_create(0, 0, objHUD);
 
 instance_create(0,0,obj_hud_border);
 

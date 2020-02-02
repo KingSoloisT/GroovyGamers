@@ -33,7 +33,8 @@ surface_set_target(sFog);
 
 //draw_clear(c_black); //Default: c_black
 
-draw_clear_alpha(c_black, 0.975);
+//draw_clear_alpha(c_black, 0.975);
+draw_background(background7, 0, 0);// view_xview, view_yview)
 
 surface_reset_target();
 </string>
@@ -60,20 +61,12 @@ surface_reset_target();
             <kind>1</kind>
             <string>if (surface_exists(sFog))
 {
-    draw_surface_ext(sFog, 0, 0, res, res, 0, 0, 1);
+    draw_surface_ext(sFog, 0, 0, res, res, 0, c_white, 1);
 }
 
 if (sFog == 1) //Added BugFix here: Fog not created after menu.
 {
     sFog = surface_create(room_width / res, room_height / res);
-
-    surface_set_target(sFog);
-    
-    //draw_clear(c_black); //Default: c_black
-    
-    draw_clear_alpha(c_black, 0.5);
-    
-    surface_reset_target();
 }
 </string>
           </argument>

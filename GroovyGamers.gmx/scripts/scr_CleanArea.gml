@@ -6,7 +6,7 @@
 
 if (collision_circle(x, y, AreaSizeToClean, obj_mountain0, false, false))
 {
-    instance_destroy(obj_mountain0);
+    with (obj_mountain0) {instance_destroy();}
 }
 
 /*

@@ -156,7 +156,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playerma
     if mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(obj_playermarker)
     {
         //spd = 0;
-       instance_destroy(obj_playermarker);
+       with (obj_playermarker) {instance_destroy();}
        //scr_AdjustSpeed();
        move_towards_point(0,0,0);
        //spd = 0;
@@ -165,7 +165,7 @@ if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playerma
     if place_meeting(x,y,obj_playermarker)
     {
         //spd = 0;
-        instance_destroy(obj_playermarker);
+        with (obj_playermarker) {instance_destroy();}
         //scr_AdjustSpeed();
         moveing = false;
         move_towards_point(0,0,0);
