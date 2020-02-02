@@ -30,13 +30,13 @@ image_xscale = 0.125;
 image_yscale = 0.125;
 spd = 50; //Default 4?
 
-playerHP = 5;
+global.playerHP = 5;
 
 iPlayerMarkerX = x;
 iPlayerMarkerY = y;
 compass = false;
 
-AreaSizeToClean = 300;
+AreaSizeToClean = 500;
 
 scr_CleanArea(); //- issue here
 
@@ -255,13 +255,13 @@ surface_reset_target();
     <event eventtype="9" enumb="82">
       <action>
         <libid>1</libid>
-        <id>331</id>
+        <id>223</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
+        <functionname>action_current_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>

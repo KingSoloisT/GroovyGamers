@@ -36,6 +36,15 @@ surface_set_target(sFog);
 //draw_clear_alpha(c_black, 0.975);
 draw_background(background7, 0, 0);// view_xview, view_yview)
 
+//for (iX=0; iX&lt;CONDITION; iX+=1)
+//{
+    //STATEMENT;
+    //for (iY=0; iY&lt;CONDITION; iY+=1)
+    //{
+        //STATEMENT;
+    //}
+//}
+
 surface_reset_target();
 </string>
           </argument>

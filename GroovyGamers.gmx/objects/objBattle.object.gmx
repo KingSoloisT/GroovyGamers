@@ -180,10 +180,21 @@ if fightComplete == 1 {
             bgBlend = c_red;
             }
         if pHasWon {
-            pX = -175;
+            if pSpr != sprArcher {
+                pX = -175;
+                } else {
+                draw_sprite_ext(spr_Arrow,0,view_xview + view_wview / 2, view_yview + view_hview / 2 + eX + 150,  view_yview + view_hview / 2 - 50, 1, 0, c_white, 1);
+                }
+            }
+            
             pInd = 3;
             eInd = 5;
             } else {
+            if pSpr != sprArcher {
+                eX = 175;
+                } else {
+                draw_sprite_ext(spr_Arrow,0,view_xview + view_wview / 2, view_yview + view_hview / 2 + pX - 150,  view_yview + view_hview / 2 - 50, 1, 0, c_white, 1);
+                }
             eX = 175;
             pInd = 5;
             eInd = 3;
@@ -202,7 +213,7 @@ if fightComplete == 1 {
     if timerAnimation &gt;= 200 {
         if (pHasWon == 0)
         {
-            playerHP -= 1;
+            global.playerHP -= 1;
         }
         
         instance_destroy();
@@ -212,7 +223,7 @@ if fightComplete == 1 {
             room_goto(rm_closing);
         }
         
-        }
+        
     }
 </string>
           </argument>
