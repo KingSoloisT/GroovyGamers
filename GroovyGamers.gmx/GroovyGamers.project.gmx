@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\sng_main</sound>
     <sound>sound\sng_baddies</sound>
+    <sound>sound\fx_select</sound>
     <sounds name="Hero 1 Wavs">
       <sound>sound\fx_h1start</sound>
       <sound>sound\fx_h1end</sound>
@@ -56,7 +57,9 @@
       <sound>sound\fx_opening</sound>
       <sound>sound\fx_ending</sound>
     </sounds>
-    <sound>sound\fx_select</sound>
+    <sounds name="Battle Sounds">
+      <sound>sound\fx_battlehit</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
