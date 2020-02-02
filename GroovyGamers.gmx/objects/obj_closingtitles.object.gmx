@@ -60,6 +60,11 @@ alarm[3] = 400;
           <argument>
             <kind>1</kind>
             <string>subtitle = None;
+
+if !instance_exists(obj_credits)
+{
+    instance_create(1920/2,2000,obj_credits);
+}
 </string>
           </argument>
         </arguments>
