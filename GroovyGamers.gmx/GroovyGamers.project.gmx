@@ -121,6 +121,7 @@
     <scripts name="Battle">
       <script>scripts\scrDrawUI.gml</script>
     </scripts>
+    <script>scripts\scr_AdjustSpeed.gml</script>
   </scripts>
   <shaders name="shaders">
     <shaders name="Battle">

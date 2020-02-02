@@ -28,7 +28,10 @@
             <string>moveing = false;
 image_xscale = 0.125;
 image_yscale = 0.125;
-spd = 2; //Default 2
+spd = 4; //Default 4?
+
+iPlayerMarkerX = x;
+iPlayerMarkerY = y;
 </string>
           </argument>
         </arguments>
@@ -100,25 +103,51 @@ spd = 2; //Default 2
             <string>//enemy ai
 if (alarm[1] = -1) {alarm[1] = 300};
 
+
+//ADD SPEED ADJUSTMENTS HERE.
+//scr_AdjustSpeed();
+
+//scr_AdjustSpeed();
+
 //controls
 if mouse_check_button_released(mb_left) &amp;&amp; !instance_exists(obj_playermarker)
     {
+        
+        //scr_AdjustSpeed();
        moveing = true;
        instance_create(mouse_x,mouse_y,obj_playermarker);
-       move_towards_point(obj_playermarker.x,obj_playermarker.y,spd); //default speed = 2
+       
+       
+       //iPlayerMarkerX = obj_playermarker.x;
+       //iPlayerMarkerY = obj_playermarker.y;
+       //scr_AdjustSpeed();
+       move_towards_point(obj_playermarker.x,obj_playermarker.y,spd); //default speed = 4
     }
+    
+    //move_towards_point(obj_playermarker.x,obj_playermarker.y,spd);
+    
+    //move_towards_point(iPlayerMarkerX,iPlayerMarkerY,spd);
+    
+    
+    
     
     if mouse_check_button_pressed(mb_left) &amp;&amp; instance_exists(obj_playermarker)
     {
+        //spd = 0;
        instance_destroy(obj_playermarker);
+       //scr_AdjustSpeed();
        move_towards_point(0,0,0);
+       //spd = 0;
     }
     
     if place_meeting(x,y,obj_playermarker)
     {
+        //spd = 0;
         instance_destroy(obj_playermarker);
+        //scr_AdjustSpeed();
         moveing = false;
         move_towards_point(0,0,0);
+        //spd = 0;
     }
     
 if (alarm[0] = -1) {alarm[0] = 60};
