@@ -56,6 +56,7 @@
       <sound>sound\fx_opening</sound>
       <sound>sound\fx_ending</sound>
     </sounds>
+    <sound>sound\fx_select</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player0</sprite>
@@ -168,6 +169,8 @@
       <object>objects\obj_displaymanager</object>
       <object>objects\obj_subtitles</object>
       <object>objects\obj_restart_game</object>
+      <object>objects\obj_audioswitcher</object>
+      <object>objects\obj_audioswitcher2</object>
     </objects>
     <objects name="Map Objects">
       <object>objects\obj_player0</object>
